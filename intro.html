@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="intro.js"></script> -->
+    <title>user input</title>
+</head>
+
+<body>
+
+
+    <script>
+        var room = "dining room";
+        var suspect = 'Mr. Parkes';
+        var weapon = "";
+        var solved = false;
+
+        if (suspect == "Ms. Van Cleve" && room == "gallery") {
+            weapon = "trophy";
+            solved = true;
+        } else if (suspect == "Mrs. Sparr" && room == "billiards room") {
+            weapon = "pool stick";
+            solved = true;
+        } else if (suspect == "Mr. Kalehoff" && room == "ballroom") {
+            weapon = "poison";
+            solved = true;
+        } else {
+            suspect == "Mr. Parkes" && room == "dining room";
+            weapon = "knife";
+            solved = true;
+        }
+
+        if (solved) {
+            console.log(suspect + "did it in the " + room + "with the " + weapon);
+        }
+    </script>
+
+</body>
+
+</html>
