@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     
+    Directions:
+    Write an anonymous function expression that stores a function in a variable called "laugh" and outputs the number of
+    "ha"s that you pass in as an argument. 
+-->
+
+    <script>
+        /*
+         * Programming Quiz: Laugh (5-4)
+         */
+
+        var laugh = function (x) {
+            laughString = "";
+
+            for (var i = 0; i < x; i++) {
+                laughString += "ha";
+            }
+            laughString += "!";
+            return laughString;
+        }
+        console.log(laugh(10));
+
+
+        /*
+         * Programming Quiz: Cry (5-5)
+         */
+
+        // your code goes here
+
+        var cry = function makeCry(m) {
+            var cryString = 'boohoo!';
+            return cryString;
+        }
+
+        console.log(cry());
+    </script>
+</body>
+
+</html>
