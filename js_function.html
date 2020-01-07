@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+
+<body>
+    <!-- 
+        1. function as parameters
+        2. Name function expression
+
+    -->
+
+    <script>
+        // Function as parameters
+        // function expression catSays
+        var catSays = function (max) {
+            var catMessage = "";
+            for (var i = 0; i < max; i++) {
+                catMessage += "meow ";
+            }
+            return catMessage;
+        }
+        // function declaration helloCat accepting a callback
+        function helloCat(callbackFunc) {
+            return "Hello " + callbackFunc(3);
+            // return : Hello meow meow meow;
+            // catSays is used as callback function here.
+        }
+    </script>
+</body>
+
+</html>
