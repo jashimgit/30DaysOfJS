@@ -11,12 +11,12 @@
 <body>
     <!-- 
         1. function as parameters
-        2. Name function expression
+        2. Named function expression
 
     -->
 
     <script>
-        // Function as parameters
+        // Function as parameters 
         // function expression catSays
         var catSays = function (max) {
             var catMessage = "";
@@ -31,6 +31,17 @@
             // return : Hello meow meow meow;
             // catSays is used as callback function here.
         }
+
+        console.log(helloCat(catSays));
+
+        // Named function expressions
+
+
+        var favoriteMovie = function movie() {
+            return "The Fountain";
+        }
+        // console.log(movie()); // r(eturn a reference error
+        console.log(favoriteMovie()); // return "The Fountain"
     </script>
 </body>
 

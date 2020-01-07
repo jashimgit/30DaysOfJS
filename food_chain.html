@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Chain Quize</title>
 </head>
+
 <body>
-    
-<script>
-/*
- * Programming Quiz - Navigating the Food Chain (3-8)
- *
- * Use a series of ternary operator to set the category to one of the following:
- *   - "herbivore" if an animal eats plants
- *   - "carnivore" if an animal eats animals
- *   - "omnivore" if an animal eats plants and animals
- *   - undefined if an animal doesn't eat plants or animals
- *
- * Notes
- *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions
- *   - `if` statements aren't allowed ;-)
- */
 
- //  conditional ? (if condition is true) : (if condition is false)
+    <script>
+        /*
+         * Programming Quiz - Navigating the Food Chain (3-8)
+         *
+         * Use a series of ternary operator to set the category to one of the following:
+         *   - "herbivore" if an animal eats plants
+         *   - "carnivore" if an animal eats animals
+         *   - "omnivore" if an animal eats plants and animals
+         *   - undefined if an animal doesn't eat plants or animals
+         *
+         * Notes
+         *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions
+         *   - `if` statements aren't allowed ;-)
+         */
 
-// change the values of `eatsPlants` and `eatsAnimals` to test your code
-var eatsPlants = false;
-var eatsAnimals = true;
+        //  conditional ? (if condition is true) : (if condition is false)
 
-var category = "";
+        // change the values of `eatsPlants` and `eatsAnimals` to test your code
+        var eatsPlants = true;
+        var eatsAnimals = false;
 
-eatsAnimals == true && eatsPlants == true ? category = "omnivore" : category = undefined;
-eatsPlants == false && eatsAnimals == true ? category = ""
+        var category = eatsAnimals && eatsPlants ? "omnivore" : (!eatsAnimals && eatsPlants) ? "herbivore" : (
+            eatsAnimals && !eatsPlants) ? "carnivore" : undefined;
 
-
-
-console.log(category);
+        // eatsAnimals == true && eatsPlants == true ? category = "omnivore" : category = undefined;
+        // eatsPlants == false && eatsAnimals == true ? category = ""
 
 
-</script>
+
+        console.log(category);
+    </script>
 
 </body>
+
 </html>
