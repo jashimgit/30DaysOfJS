@@ -58,14 +58,50 @@
         // var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
 
         var rainbow = ['Red', 'Orange', 'Blackberry', 'Blue'];
+        // your code goes here
+        // rainbow.splice(2, 1, "Yellow", "Green");
+
+        //  console.log(rainbow);
+        // rainbow.splice(-1, 1, 'Blue', 'Purple');
+        // console.log(rainbow);
+        /*
+         * Programming Quiz: Quidditch Cup (6-5)
+         */
 
         // your code goes here
-        rainbow.splice(2, 1, "Yellow", "Green");
 
-         console.log(rainbow);
-        rainbow.splice(-1, 1, 'Blue', 'Purple');
+        var team = [
+            "Oliver Wood", 
+            "Angelina Johnson", 
+            "Katie Bell", 
+            "Alicia Spinnet", 
+            "George Weasley", 
+            "Fred Weasley",
+            "Harry Potter"
+        ];
+        var team = team.length;
 
-        console.log(rainbow);
+        function hasEnoughPlayers(data) {
+           if(data == 7){
+               return true;
+           } else {
+               return false;
+           }
+        }
+
+        console.log(hasEnoughPlayers(team));
+
+        // loop through array
+        var donuts = ['jelly donut', 'chocolate donut', 'glazed donut'];
+        // variable 'i' is used to ste through each element in the array
+        for(var i = 0; i < donuts.length; i++ ){
+            donuts[i] += " hole";
+            donuts[i] = donuts[i].toUpperCase();
+        }
+        console.log(donuts);
+
+        // forEach() method to loop array
+        
     </script>
 
 
