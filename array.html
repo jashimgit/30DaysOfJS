@@ -34,7 +34,8 @@
     <h4>Array after splice method</h4>
     <p id="sliceM"> </p> <br>
 
-
+    <!-- looping array -->
+    <p id="forEach"></p>
     <script>
         // splice () method for array
         var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
@@ -71,37 +72,68 @@
         // your code goes here
 
         var team = [
-            "Oliver Wood", 
-            "Angelina Johnson", 
-            "Katie Bell", 
-            "Alicia Spinnet", 
-            "George Weasley", 
+            "Oliver Wood",
+            "Angelina Johnson",
+            "Katie Bell",
+            "Alicia Spinnet",
+            "George Weasley",
             "Fred Weasley",
             "Harry Potter"
         ];
         var team = team.length;
 
         function hasEnoughPlayers(data) {
-           if(data == 7){
-               return true;
-           } else {
-               return false;
-           }
+            if (data == 7) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
-        console.log(hasEnoughPlayers(team));
+        // console.log(hasEnoughPlayers(team)); // result output
 
         // loop through array
         var donuts = ['jelly donut', 'chocolate donut', 'glazed donut'];
         // variable 'i' is used to ste through each element in the array
-        for(var i = 0; i < donuts.length; i++ ){
+        for (var i = 0; i < donuts.length; i++) {
             donuts[i] += " hole";
             donuts[i] = donuts[i].toUpperCase();
         }
-        console.log(donuts);
+        // console.log(donuts); // result output
 
-        // forEach() method to loop array
-        
+        // forEach() method to loop array element in the array with an inline function expression.
+        donuts.forEach(function (donut) {
+            donut += " hole \n";
+            donut = donut.toUpperCase();
+            document.getElementById('forEach').innerHTML = donuts + '\n';
+            // console.log(donut);
+        });
+
+        // another type of loop quize 
+        /*
+         * Programming Quiz: Another Type of Loop (6-8)
+         *
+         * Use the existing `test` variable and write a `forEach` loop
+         * that adds 100 to each number that is divisible by 3.
+         *
+         * Things to note:
+         * - you must use an `if` statement to verify code is divisible by 3
+         * - you can use `console.log` to verify the `test` variable when you're finished looping
+         */
+
+        var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+            19, 300, 3775, 299, 36, 209, 148, 169, 299,
+            6, 109, 20, 58, 139, 59, 3, 1, 139
+        ];
+
+        // Write your code here
+        test.forEach(function (value, i, arr) {
+
+            if (value % 3 === 0) {
+                arr[i] += 100
+            }
+        });
+        console.log(test);
     </script>
 
 
