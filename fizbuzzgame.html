@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FizzBuzz Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            height: 100px;
+            background-color: rgb(72, 84, 195);
+            margin: 0;
+            text-align: center;
+            padding: 0 0px 20px 0;
+            color: whitesmoke;
+        }
+
+        </style
 </head>
 
 <body>
-
+<h1>Fizz Buzz Game Quiz in JavaScript</h1>
+<div>
+    <p id="demo"></p>
+</div>
     <script>
         /*   
         Directions:
@@ -30,17 +49,17 @@
 
         while (x < 100 ) { 
             if(x % 3){ 
-                console.log("Julia"); 
+                document.getElementById('demo').innerHTML = "Fizz";
             } else if(x % 5 ) {
-                console.log('James'); 
+              document.getElementById('demo').innerHTML = "Buzz";
             } else if(x % 3 || x % 5 ) { 
-                console.log('JuliaJames'); 
+               document.getElementById('demo').innerHTML = "FizzBuzz";
             } else { 
                 console.log(x); 
             }  
             x++;
         }
-
+    
     </script>
 
 
