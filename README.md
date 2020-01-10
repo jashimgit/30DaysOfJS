@@ -12,3 +12,4 @@ Three examples added in js_function.html, if anything need correction please giv
 
 Day00: 10 Jan, 2020
 ````` trying to solve some challenge from edabit.com.
+````` I solved 10 problems of JavaScript, though all are very easy but a few are hard for me but I solved that.
