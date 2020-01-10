@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Challenge</title>
+    </head>
+
+    <body>
+        <h2>1: create a function that finds the maximum range of a triangles  third edge</h2>
+        <p>Answer:<span id="demo1"></span></p>
+        <script>
+            // create a function that finds the maximum range of a triangles 
+            // third edge
+            // (side1 + side2) -1 = maximum range of third edge.
+
+            function nextEdge( side1, side2 ) {
+                return ( side1 + side2 ) - 1;
+            }
+document.getElementById('demo1').innerHTML = nextEdge(8,10);
+            console.log( nextEdge( 8, 10 ) ); //  return 17 
+        </script>
+    </body>
+
+</html>

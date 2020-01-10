@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Prayer Times</title>
+    </head>
+
+    <body>
+        <script //var dateBN=document.getElementById("dateBN").innerHTML; var date=new Date(); // today // var
+            times=prayTimes.getTimes(date, [23.777176, 90.399452], +6, "auto" , "12h" ); var list=['Fajr', 'Dhuhr'
+            , 'Asr' , 'Maghrib' , 'Isha' ]; var listBN=['ফজর', 'জোহর' , 'আসর' , 'মাগরিব' , 'ইশা' ]; //var
+            listTime=['ভোর', 'বেলা' , 'বিকেল' , 'সন্ধ্যা' , 'রাত' ]; var listSun=['sunrise', 'sunset' ]; var
+            listSunBN=['সূর্যোদয়', 'সূর্যাস্ত' ]; //var listSunTime=['ভোর', 'সন্ধ্যা' ]; function
+            en_to_bn_number_conversion(en_number) { var bn_number='' ; for (var i=0; i < en_number.length; i++) { if
+            (en_number[i]=='0' ) bn_number=bn_number + "০" ; if (en_number[i]=='1' ) bn_number=bn_number + "১" ; if
+            (en_number[i]=='2' ) bn_number=bn_number + "২" ; if (en_number[i]=='3' ) bn_number=bn_number + "৩" ; if
+            (en_number[i]=='4' ) bn_number=bn_number + "৪" ; if (en_number[i]=='5' ) bn_number=bn_number + "৫" ; if
+            (en_number[i]=='6' ) bn_number=bn_number + "৬" ; if (en_number[i]=='7' ) bn_number=bn_number + "৭" ; if
+            (en_number[i]=='8' ) bn_number=bn_number + "৮" ; if (en_number[i]=='9' ) bn_number=bn_number + "৯" ; if
+            (en_number[i]==':' ) bn_number=bn_number + ":" ; } return bn_number; } for (var i in list) { if (i==2) { var
+            times=prayTimes.getTimes(date, [23.777176, 90.399452], +7.3, "auto" , "12h" ); } else { var
+            times=prayTimes.getTimes(date, [23.777176, 90.399452], +6, "auto" , "12h" ); } }
+            sun='<span class="sunrise">' + listSunBN[1] + " : " +
+            en_to_bn_number_conversion(times[listSun[1].toLowerCase()]) + '</span>' ; sun +='<span class="sunset">' +
+            listSunBN[0] + " : " + en_to_bn_number_conversion( times[listSun[0].toLowerCase()] ) + '</span>' ; var
+            html='<table cellspacing="1" cellpadding="1" width="100%">' ; for ( var i in list ) { if ( i==2 ) { var
+            times=prayTimes.getTimes( date, [23.777176, 90.399452], +7.3, "auto" , "12h" ); } else { var
+            times=prayTimes.getTimes( date, [23.777176, 90.399452], +6, "auto" , "12h" ); } var
+            timeEN=times[list[i].toLowerCase()]; html +='<tr><td><span class="prayerName">' + listBN[i] + '</span></td>'
+            ; html +='<td><span class="prayerTime">' + en_to_bn_number_conversion( times[list[i].toLowerCase()] )
+            + '</span></td></tr>' ; } html +='</table>' ; document.getElementById( 'tableSunTimes' ).innerHTML=sun;
+            document.getElementById( 'tablePrayTimes' ).innerHTML=html; </script> </body> </html>

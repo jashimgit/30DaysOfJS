@@ -2,72 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Functions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Functions</title>
 </head>
 
 <body>
-    <!-- 
+  <!-- 
         1. function as parameters
         2. Named function expression
         3. Inline function
 
     -->
+  <h2>What is Inline function expression in javascript</h2>
+  <p>
+    Inline function example A function expression is when a function is
+    assigned to a variable in javascript, this can also happen when you pass a
+    function inline as an arguments to another function.
+  </p>
+  <h3>Quiz: Inline function</h3>
+  <p>
+    Call the emotions() function so that it prints the output you see below,
+    but instead of passing the laugh() function as an argument, pass an inline
+    function expression instead.
+  </p>
+  <code>emotions("happy", laugh(2)); </code><br />
 
-    <script>
-        // Function as parameters 
-        // function expression catSays
-        var catSays = function (max) {
-            var catMessage = "";
-            for (var i = 0; i < max; i++) {
-                catMessage += "meow ";
-            }
-            return catMessage;
-        }
-        // function declaration helloCat accepting a callback
-        function helloCat(callbackFunc) {
-            return "Hello " + callbackFunc(3);
-            // return : Hello meow meow meow;
-            // catSays is used as callback function here.
-        }
+  <strong>Prints:</strong> <span><em>"I am happy, haha!"</em></span>
+  <br />
+  <pre>
+    /*
+    * Programming Quiz: Inline Functions  Solution
+    */
 
-        console.log(helloCat(catSays));
+    // don't change this code
+    function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+    }
 
-        // Named function expressions
+    // your code goes here
+    // call the emotions function here and pass in an
+    // inline function expression
+    emotions("happy", function laugh(x){
+    var laughString = '';
 
+    for(i =0; i < x; i++){ laughString +='ha' ; } laughString +='!' ; return laughString; })
+    </pre>
+  <script>
+    // Function as parameters
+    // function expression catSays
+    var catSays = function (max) {
+      var catMessage = "";
+      for (var i = 0; i < max; i++) {
+        catMessage += "meow ";
+      }
+      return catMessage;
+    };
+    // function declaration helloCat accepting a callback
+    function helloCat(callbackFunc) {
+      return "Hello " + callbackFunc(3);
+      // return : Hello meow meow meow;
+      // catSays is used as callback function here.
+    }
 
-        var favoriteMovie = function movie() {
-            return "The Fountain";
-        }
-        // console.log(movie()); // return a reference error
-        console.log(favoriteMovie()); // return "The Fountain"
+    console.log(helloCat(catSays));
 
-        // Inline function example
-        /* A function expression is when a function is assigned to a variable
-            in javascript, this can also happen when you pass a function 
-            inline as an arguments to another function.
-        */
-       // function expression that assigns the function displayFavorite
-       // to the variable favoriteMovie
+    // Named function expressions
 
-       var favoriteMovie = function displayFavorite(movieName){
-           console.log("My favorite movie is " + movieName) ;
-       }
+    var favoriteMovie = function movie() {
+      return "The Fountain";
+    };
+    // console.log(movie()); // return a reference error
+    console.log(favoriteMovie()); // return "The Fountain"
 
-       // function declaration that has two parameters: a function for displaying 
-       // a message, along with a name of a movie
-       function movies(messageFunction, name){
-           messageFunction(name);
-       }
-       // call the movies function, pass in the favoriteMovie function and name of movie
+    // Inline function example
+    /* A function expression is when a function is assigned to a variable
+          in javascript, this can also happen when you pass a function 
+          inline as an arguments to another function.
+      */
+    // function expression that assigns the function displayFavorite
+    // to the variable favoriteMovie
 
-       movies(favoriteMovie, "Finding Nemo");
+    var favoriteMovie = function displayFavorite(movieName) {
+      console.log("My favorite movie is " + movieName);
+    };
 
+    // function declaration that has two parameters: a function for displaying
+    // a message, along with a name of a movie
+    function movies(messageFunction, name) {
+      messageFunction(name);
+    }
+    // call the movies function, pass in the favoriteMovie function and name of movie
 
-       
-    </script>
+    movies(favoriteMovie, "Finding Nemo");
+  </script>
 </body>
 
 </html>
