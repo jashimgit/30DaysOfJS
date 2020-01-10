@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <h2>1: create a function that finds the maximum range of a triangles  third edge</h2>
+        <h2>1: create a function that finds the maximum range of a triangles third edge</h2>
         <p>Answer:<span id="demo1"></span></p>
         <script>
             // create a function that finds the maximum range of a triangles 
@@ -19,9 +19,53 @@
             function nextEdge( side1, side2 ) {
                 return ( side1 + side2 ) - 1;
             }
-document.getElementById('demo1').innerHTML = nextEdge(8,10);
+            document.getElementById( 'demo1' ).innerHTML = nextEdge( 8, 10 );
             console.log( nextEdge( 8, 10 ) ); //  return 17 
+
+            /* Task
+             Variables named firstInteger, firstDeccimal  and firstString are declared for you in the editor below. You must use the operator to perform the
+             following sequence of operations:
+
+             1. Convert to an integer (Number type), then sum it with and print the result on a new line using console.log.
+             2. Convert to a floating-point number (Number type), then sum it with and print the result on a new line using  console.log.
+             3 . Print the concatenation of and on a new line using console.log. Note that must be printed first. 
+             */
+            /**
+             * The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
+             * Print three lines:
+             * 1. The sum of 'firstInteger' and the Number representation of 'secondInteger'.
+             * 2. The sum of 'firstDecimal' and the Number representation of 'secondDecimal'.
+             * 3. The concatenation of 'firstString' and 'secondString' ('firstString' must be first).
+             *
+             * Parameter(s):
+             * secondInteger - The string representation of an integer.
+             * secondDecimal - The string representation of a floating-point number.
+             * secondString - A string consisting of one or more space-separated words.
+             **/
+            function performOperation( secondInteger, secondDecimal, secondString ) {
+                // Declare a variable named 'firstInteger' and initialize with integer value 4.
+                const firstInteger = 4;
+                secondInteger = Number(secondInteger);
+                
+                // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
+                const firstDecimal = 4.0;
+                
+                // Declare a variable named 'firstString' and initialize with the string "HackerRank".
+                const firstString = 'HackerRank ';
+                const secondString = 'is the best place to learn and practice coding!';
+                // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number type) on a new line.
+                console.log(firstInteger + secondInteger);
+
+                // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number type ) on a new line.
+                console.log(firstDecimal + secondDecimal);
+
+              // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line.
+              // The variable 'firstString' must be printed first.
+                console.log(firstString + secondString);
+            }
+
+            
         </script>
     </body>
 
-</html>
+</html> 01871549673

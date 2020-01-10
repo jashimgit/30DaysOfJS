@@ -9,3 +9,6 @@ Day00: JavaScript Function
 ````` Named function expression
 ````` Inline function
 Three examples added in js_function.html, if anything need correction please give me suggestion, I am learning. Your suggestion will be appreciated.
+
+Day00: 10 Jan, 2020
+````` trying to solve some challenge from edabit.com.
