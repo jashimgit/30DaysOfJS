@@ -52,7 +52,7 @@
 
                 // Declare a variable named 'firstString' and initialize with the string "HackerRank".
                 const firstString = 'HackerRank ';
-                const secondString = 'is the best place to learn and practice coding!';
+                
                 // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number type) on a new line.
                 console.log( firstInteger + secondInteger );
 
@@ -63,7 +63,34 @@
                 // The variable 'firstString' must be printed first.
                 console.log( firstString + secondString );
             }
+            console.log(performOperation('4', 4.29, 'is the best place to learn and practice coding!'));
+
+            function concatName(firstname, lastName){
+                return concatName(lastName +","+ firstName);
+            }
+            // console.log(concatName('john', 'doe'));
+
+            // check a number is divisible by 5, if true return true else false
+
+            function divisibleByFive(n) {
+                if (n % 5 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(divisibleByFive(25));
+            // divisibleByFive(25);
+
+            // JavaScript Arrow function
+
+            const materials = [
+                'Hydrogen', 'Helium', 'Lithium', 'Beryllium'
+            ];
+            console.log(materials.map(materials => materials.length));
+
+            
         </script>
     </body>
 
-</html> 01871549673
+</html>
