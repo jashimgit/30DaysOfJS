@@ -17,3 +17,8 @@ function rdbtn1() {
         alert( 'nothing selected' );
     }
 }
+// get data from select box from multiple option
+function selectBox() {
+    var select = document.getElementById( 'selectbox' );
+    alert( select.options[ select.selectedIndex ].value );
+}
