@@ -16,3 +16,7 @@ function pet(type, name, weight, likes) {
     this.weight = weight;
     this.likes = likes;
 }
+const myGreeting = function () {
+    console.log('Hello');
+}
+myGreeting();

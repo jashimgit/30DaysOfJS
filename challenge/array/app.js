@@ -49,3 +49,11 @@ for (let x = 0; x < 10; x++) {
 }
 
 console.table(value);
+const months = ['March', 'Jan', 'Feb', 'April'];
+months.filter();
+console.log(months);
+
+var today = new Date().toLocaleDateString('en-US', {
+    day:'numeric', month : 'short', year:'numeric'
+});
+console.log(today);
