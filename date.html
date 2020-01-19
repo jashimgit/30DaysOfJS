@@ -11,19 +11,14 @@
     <body>
         <h1>JavaScript Date </h1>
         <p id="demo">
-
+            click the button to display the date.
         </p>
-
+<button onclick="displayDate()">The time is? </button>
         <script>
-            function printTime() {
-                var d = new Date();
-                var hours = d.getHours();
-                var mins = d.getMinutes();
-                var secs = d.getSeconds();
+            function displayDate() {
+                document.getElementById('demo').innerHTML = Date();
             }
 
-            document.body.innerHTML = hours + ":" + mins + ":" + secs;
-            setInterval( printTime, 1000 );
         </script>
     </body>
 
