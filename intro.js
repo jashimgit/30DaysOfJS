@@ -60,3 +60,54 @@ console.log(str.trim());
 var shopItems =
   "Apple banana milk juice carrots beans broaklee pumpgrande tomato";
 console.log(shopItems.split(" "));
+
+// Number methods
+
+// 1. toFixed() == returns a string, with the number writer
+var x = 9.435435;
+console.log(x.toFixed(2)); // 9.43 string
+console.log(x.toFixed(3));
+console.log(x.toFixed(4));
+console.log(x.toFixed(5));
+
+// 2. toString() returns a number as a string
+
+console.log(x.toString());
+// 3. toPrecision() returns a string, with a number with
+// specified lenght
+
+console.log(x.toPrecision());
+console.log(x.toPrecision(3));
+
+// Converting Variables to numbers
+// Number(), parseInt(), parseFloat()
+var x = "100";
+Number(x);
+x;
+parseInt(x);
+x;
+parseFloat(x);
+x;
+
+// sorting array
+// sort() method sorts an array alphabetically
+// see example below
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort());
+// reversing an array
+console.log(fruits.sort());
+console.log(fruits.reverse());
+
+// Numeric Sort
+// sort() method produce incorrect result when sorting number
+// we can fix by providing a compare function
+
+var points = [40, 100, 1, 5, 15, 10];
+
+console.log(
+  points.sort((a, b) => {
+    a - b;
+  })
+);
+ 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Array</title>
+  </head>
+  <body>
+    <h2>JavaScript Array Sort</h2>
+    <p>Click the button to sort the array in ascending order</p>
+    <ul>
+      <li>sort() method</li>
+      <span>sorts string type array alphabeticlly</span>
+    </ul>
+    <button onclick="myFunction()">Try now!</button>
+    <p id="demo"></p>
+    <br />
+
+    <br />
+    <h3>JavaScript array sort</h3>
+    <p>The highest number is <span id="sDemo"></span>.</p>
+    <script>
+      var points = [40, 100, 3, 45, 24, 29, 59, 30, 176];
+      document.getElementById("demo").innerHTML = points;
+
+      function myFunction() {
+        points.sort((a, b) => {
+          return a - b;
+        });
+        document.getElementById("demo").innerHTML = points;
+      }
+      // var points = [40, 100, 3, 145, 24, 29, 59, 30, 76];
+      document.getElementById('sDemo').innerHTML = myArrayMax(points);
+
+      function  myArrayMax(arr) {
+        var len = arr.length;
+        var max = -Infinity;
+
+        while (len--) {
+          if(arr[len] > max ){
+            max = arr[len];
+          }
+        }
+        
+        return max;
+      }
+    </script>
+  </body>
+</html>
