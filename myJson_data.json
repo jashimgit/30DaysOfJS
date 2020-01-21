@@ -2,7 +2,7 @@
   {
     "fname": "Sharful",
     "lname": "Mclaurin",
-    "city": "Fossil",
+    
     "address": {
       "streetAddress": "4867 Ac Ave",
       "city": "Nashville",
@@ -14,7 +14,7 @@
   {
     "fname": "Courtney",
     "lname": "Scheider",
-    "city": "Lewiston",
+    
     "address": {
       "streetAddress": "7745 Sapien Dr",
       "city": "Whitehouse",
@@ -26,7 +26,7 @@
   {
     "fname": "Miguel",
     "lname": "Gould",
-    "city": "Emmaus",
+    
     "address": {
       "streetAddress": "3731 Pretium Ave",
       "city": "Aurora",
@@ -38,7 +38,7 @@
   {
     "fname": "Susi",
     "lname": "Nimon",
-    "city": "Peabody",
+    
     "address": {
       "streetAddress": "1148 Etiam Ct",
       "city": "Houston",
@@ -50,7 +50,7 @@
   {
     "fname": "Nicolas",
     "lname": "Reeder",
-    "city": "Marietta",
+    
     "address": {
       "streetAddress": "1150 Sit Ct",
       "city": "Kansas City",
@@ -62,7 +62,7 @@
   {
     "fname": "Denys",
     "lname": "Robison",
-    "city": "Middleburg",
+    
     "address": {
       "streetAddress": "3488 Curabitur Ave",
       "city": "Siloam Springs",
@@ -74,7 +74,7 @@
   {
     "fname": "Paula",
     "lname": "Gumatay",
-    "city": "El Paso",
+    
     "address": {
       "streetAddress": "9805 Curabitur Ln",
       "city": "Winters",
@@ -86,7 +86,7 @@
   {
     "fname": "Darren",
     "lname": "Evert",
-    "city": "El Dorado Hills",
+    
     "address": {
       "streetAddress": "8574 Ante Ln",
       "city": "Rio Rancho",
@@ -98,7 +98,7 @@
   {
     "fname": "Chanel",
     "lname": "Boomer",
-    "city": "Tonasket",
+    
     "address": {
       "streetAddress": "225 Odio St",
       "city": "Beaumont",
@@ -110,7 +110,7 @@
   {
     "fname": "Jaroslava",
     "lname": "Josey",
-    "city": "Hattiesburg",
+    
     "address": {
       "streetAddress": "3110 Adipiscing Ln",
       "city": "Rio Rancho",
@@ -122,7 +122,7 @@
   {
     "fname": "Noreen",
     "lname": "Doiel",
-    "city": "Conneaut",
+    
     "address": {
       "streetAddress": "1385 Placerat St",
       "city": "West Hollywood",
@@ -134,7 +134,7 @@
   {
     "fname": "Nakia",
     "lname": "Ghormley",
-    "city": "Furlong",
+    
     "address": {
       "streetAddress": "5963 Pretium Dr",
       "city": "Quincy",
@@ -146,7 +146,7 @@
   {
     "fname": "Aubre",
     "lname": "Demerath",
-    "city": "Tulsa",
+    
     "address": {
       "streetAddress": "6991 Et Rd",
       "city": "Vancouver",
@@ -158,7 +158,7 @@
   {
     "fname": "Linnette",
     "lname": "Gunter",
-    "city": "Wheeling",
+    
     "address": {
       "streetAddress": "9034 Placerat Ct",
       "city": "Granite Falls",
@@ -170,7 +170,7 @@
   {
     "fname": "Roseline",
     "lname": "Bechtold",
-    "city": "Winfield",
+    
     "address": {
       "streetAddress": "8601 Morbi Dr",
       "city": "Stony Point",
@@ -182,7 +182,7 @@
   {
     "fname": "Laraine",
     "lname": "Kasprzak",
-    "city": "Anonymous",
+    
     "address": {
       "streetAddress": "6251 Adipiscing Dr",
       "city": "Jersey Shore",
@@ -194,7 +194,7 @@
   {
     "fname": "Jennifer",
     "lname": "Landau",
-    "city": "Chicago",
+    
     "address": {
       "streetAddress": "42 Dolor Dr",
       "city": "Mesa",
@@ -218,7 +218,6 @@
   {
     "fname": "Michele",
     "lname": "Bishop",
-    "city": "Jackson Heights",
     "address": {
       "streetAddress": "4171 Pulvinar Ct",
       "city": "Columbus",
@@ -230,7 +229,7 @@
   {
     "fname": "Javier",
     "lname": "Renner",
-    "city": "Kelso",
+    
     "address": {
       "streetAddress": "6660 Nec Ave",
       "city": "Valparaiso",
