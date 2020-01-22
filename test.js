@@ -98,35 +98,52 @@ var data = [
   }
 ];
 
-// outter loop 
-for (let i = 0; i < data.length; i++) {
-  console.log(data[i].id);
-  console.log(data[i].address.city);
+// outter loop
+for ( let i = 0; i < data.length; i++ )
+{
+  console.log( data[i].id );
+  console.log( data[i].address.city );
 
   console.log(
-    'Id is : '+ data[i].id + ' ' +
-    'Name is : ' + data[i].name + ' '+
-    'User name is : ' + data[i].email + ' '+
-    'Address is : ' + data[i].address.city + ', '+ data[i].address.street +', and Zip code is : ' + data[i].address.zipcode   
-    
-    
-    )
+    "Id is : " +
+    data[i].id +
+    " " +
+    "Name is : " +
+    data[i].name +
+    " " +
+    "User name is : " +
+    data[i].email +
+    " " +
+    "Address is : " +
+    data[i].address.city +
+    ", " +
+    data[i].address.street +
+    ", and Zip code is : " +
+    data[i].address.zipcode
+  );
 }
+
+// Example for Nested For loop in JavaScript
 
 var arr = [
   [1, 2],
   [3, 4],
-  [5, 6]
+  [5, 6],
+  [7, 8],
+  [9, 10]
 ];
 
-for (let i = 0; i < arr.length; i++) {
+for ( let i = 0; i < arr.length; i++ )
+{
   const element = arr[i];
-  console.log(element);
-// inner loop 
-for( var j=0; j<arr[i].length; j++){
-  console.log(arr[i][j]);
+  console.log( element );
+  // inner loop
+  for ( var j = 0; j < arr[i].length; j++ )
+  {
+    console.log( arr[i][j]  );
+  }
 }
+ 
 
 
   
-}
