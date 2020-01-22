@@ -12,8 +12,10 @@ btn.addEventListener( "click", function () {
     //   console.log();
     var ourData = JSON.parse( myRequest.responseText );
     renderHtml( ourData );
+     
   };
 
+ 
   myRequest.send();
 } );
 
@@ -34,3 +36,6 @@ function renderHtml( data ) {
 
   tableData.insertAdjacentHTML( "beforeend", htmlString );
 } // end of renderHtml 
+
+
+// hide button when all data received
