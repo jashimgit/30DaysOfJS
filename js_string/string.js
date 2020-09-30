@@ -88,4 +88,13 @@ console.log(rawstr.trim());
 
 // note that trim() method is only available in ES5
 // ES6 introduced trimStrat() and trimEnd() method
- 
+
+//  split string with split() method
+
+let ob = ' JavaScript String split()';
+
+// let ob1 = ob.split(' ')
+console.log(ob.split(' '));
+
+console.log(typeof ob);
+// console.log(typeof ob);
