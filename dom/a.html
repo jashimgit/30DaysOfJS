@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 
-    <body>
-        <div id="header"></div>
-        <div id="content">
-            <div id="list1">
+<body>
+    <p id="message">A paragraph</p>
+    <p>Please rate the service: </p>
+    <p>
+        <input type="radio" name="rate" value="very poor">Very Poor
+        <input type="radio" name="rate" value="Poor">Poor
+        <input type="radio" name="rate" value="Ok">OK
+        <input type="radio" name="rate" value="Good"> Good
+        <input type="radio" name="rate" value="Very good"> Very Good
+    </p>
 
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+    <script>
+        // const p = document.getElementById('message');
+        let btn = document.getElementById('btnRate');
 
-                <ul class="li">Item 1</ul>
-                <ul class="li">Item 2</ul>
-                <ul class="li">Item 3</ul>
-                <ul class="li">Item 4</ul>
-            </div>
-        </div>
-    </body>
+        btn.addEventListener('click', () => {
+            let rates = document.getElementsByName('rate');
+            rates.forEach(function (rate) {
+                if (rate.checked) {
+                    console.log(`You rated: ${rate.value}`);
+                }
+
+            });
+        });
+    </script>
+</body>
 
 </html>

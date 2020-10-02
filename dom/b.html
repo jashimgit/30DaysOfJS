@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript getElementsByTagname() Demo</h1>
+    <h2>First Heading</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2>Second heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, fugit.</p>
+    <h2> Third heading </h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+    <button id="btnCount">count h2</button>
+
+
+
+    <script>
+        let btn = document.getElementById('btnCount')
+        btn.addEventListener('click', function () {
+            let headings = document.getElementsByTagName('h2');
+            alert(`The number of H2 tags : ${ headings.length }`);
+        })
+    </script>
+</body>
+
+</html>
